@@ -245,16 +245,27 @@ button[data-shadow="none"] {
     display: block;
   }
 
+  .primary-navigation[data-visible] .mobile-nav-toggle {
+    background-image: url(/images/icon-close.svg);
+  }
+
   .mobile-nav-toggle {
     display: block;
     cursor: pointer;
     background: transparent;
     padding: 0.5em;
     border: 0;
+    width: 1.5rem;
+    aspect-ratio: 1;
+
+    background-image: url(/images/icon-hamburger.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  .mobile-nav-toggle .icon-close {
-    display: none;
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url(/images/icon-close.svg);
   }
 }
 
