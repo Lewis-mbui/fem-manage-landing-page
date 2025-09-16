@@ -6,7 +6,8 @@
 
   --clr-primary-400: hsl(228, 39%, 23%);
 
-  --clr-neutral-100: hsl(0, 0%, 98%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 97%);
   --clr-neutral-900: hsl(233, 12%, 13%);
   
 
@@ -455,6 +456,33 @@ input:where([type="text"], [type="email"]) {
   }
 }
 
+/* Slider */
+.slider {
+  display: flex;
+  gap: var(--size-600);
+  list-style: none;
+}
+
+.slider > * {
+  position: relative;
+  width: 100%;
+  flex: 0 0 auto;
+  width: 400px;
+}
+
+.slider-content {
+  border-radius: var(--size-100);
+  background-color: var(--clr-neutral-200);
+  padding: var(--size-700) var(--size-600) var(--size-600);
+}
+
+.slider img {
+  width: var(--size-800);
+  position: relative;
+  transform: translateY(50%);
+  margin-inline: auto;
+}
+
 /* Utility Classes */
 .visually-hidden {
   position: absolute;
@@ -491,10 +519,6 @@ input:where([type="text"], [type="email"]) {
 .vertical-align-center {
   align-items: center;
 }
-
-/* .justify-self-end {
-  justify-self: end;
-} */
 
 /* For larger screens */
 @media (min-width: 50em) {
