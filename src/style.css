@@ -54,6 +54,7 @@
   }
 }
 
+/* RESET STYLES */
 /* Box sizing rules */
 *,
 *::before,
@@ -81,7 +82,6 @@ html:focus-within {
 html,
 body {
   min-height: 100%;
-  overflow-x: hidden;
 }
 
 /* Set core body defaults */
@@ -121,6 +121,10 @@ svg {
 
 
 /* General Styling */
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
